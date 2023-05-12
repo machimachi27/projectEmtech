@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="images/tab.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <style>
+.home{
+        color: rgb(199, 175, 42);
+        
+      }
+.heading{
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-bottom: 25px;
+}
+.description{
+    color: #bababa;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Lucida Sans;
+}
+.timer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: px;
+    justify-content: center;
+}
+.sub_timer{
+    width: 200px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.digit{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.digit_name{
+    color: #000;
+    background: #fff;
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 20px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 10px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+    </style>
+
+
+  <title>SEA BEA</title>
+  </head>
+  <body>
+    <header>      
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="awardees.html">Awardees</a></li>
+      <!--  <li><a href="bene">Our Beneficiaries</a></li> -->
+    </div>
+      <div class="navbar">
+        <div class="logo"><a href="https://www.facebook.com/profile.php?id=100088781434866">SEA BEA</a></div>  
+        <ul class="links">
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="awardees.html">Awardees</a></li>
+        <!-- <li><a href="bene">Our Beneficiaries</a></li> --> 
+      </div>
+    </header>
+      <br><br><br><br>
+    <div class="wrapper">
+      <h1 class="heading">THE AWARDING ARE COMING, NOMINATE NOW</h1>
+      <div class="timer">
+          <div class="sub_timer">
+              <h1 id="day" class="digit">00</h1>
+              <p class="digit_name">Days</p>
+          </div>
+          <div class="sub_timer">
+              <h1 id="hour" class="digit">00</h1>
+              <p class="digit_name">Hours</p>
+          </div>
+          <div class="sub_timer">
+              <h1 id="min" class="digit">00</h1>
+              <p class="digit_name">Minutes</p>
+          </div>
+          <div class="sub_timer">
+              <h1 id="sec" class="digit">00</h1>
+              <p class="digit_name">Seconds</p>
+          </div>
+      </div>
+  </div>
+<br> 
+<div class="button-div">
+<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdSfM1xhN655LhT6H5oRfa_6cr-jeISNXxesy6kPa_CPV4cKg%2Fviewform%3Ffbclid%3DIwAR0ohbZODdEb52DPDtAErVqpmyhzZwyJLmFZT5VE5BbkTlf_3vZqw0fdslo&h=AT1t596bQuPMCWqs2Brz3FD_uIZE_mqAhXxYIBadfQAxs5362iYPbxl4hY0Uh79vZztKSydZhzww0pT8T-HyMTzkKtVrZXS9F4I32kc6OJnoRgRvUM_H05v_a3XwRAjAHLSh&__tn__=-UK-R&c[0]=AT1kCascP3uNbwdZ7EbBLN9tvBSnh5UuKKsenCmUMo6TGac2h_6QrSUYsaVUhKeukRzzx3FgOIjQwQExuBDt9-5GiCUQIXSiWDdm_9Y_MFrVCHKbxUxiB7w3f4SBpLCPymEBOXmhKIAGNe-HckTiHd_yL9-AMV2H_gTOCIhEm_A"><button class="nomination">
+  Nomination
+</button></a>
+<a href="contactus.html"><button class="contactus">
+  Contact Us
+</button></a>
+</div>
+
+<div class="logos">
+  <div class="logos-slide">
+    <img src="./logos/cebu-logo.png" />
+    <img src="./logos/crowne-logo.png" />
+    <img src="./logos/sea-logo.png" />
+    <img src="./logos/akbay-logo.png" />
+    <img src="./logos/jgoe-logo.png" />
+    <img src="./logos/ph-logo.png" />
+    <img src="./logos/jgo2-logo.png" />
+
+  </div>
+
+  <div class="logos-slide">
+    <img src="./logos/cebu-logo.png" />
+    <img src="./logos/crowne-logo.png" />
+    <img src="./logos/sea-logo.png" />
+    <img src="./logos/akbay-logo.png" />
+    <img src="./logos/jgoe-logo.png" />
+    <img src="./logos/ph-logo.png" />
+    <img src="./logos/jgo2-logo.png" />
+
+  </div>
+</div>
+
+  <!-- javascript  -->
+  <script>
+        var target_mili_sec = new Date("June 23, 2023 12:00:00").getTime();
+        function timer() {
+            var now_mili_sec = new Date().getTime();
+            var remaining_sec = Math.floor( (target_mili_sec - now_mili_sec) / 1000 );
+
+            var day = Math.floor(remaining_sec / (3600 * 24));
+            var hour = Math.floor((remaining_sec % (3600 * 24)) / 3600);
+            var min = Math.floor((remaining_sec % 3600) / 60);
+            var sec = Math.floor(remaining_sec % 60);
+
+            document.querySelector("#day").innerHTML = day;
+            document.querySelector("#hour").innerHTML = hour;
+            document.querySelector("#min").innerHTML = min;
+            document.querySelector("#sec").innerHTML = sec;
+        }
+
+        setInterval(timer, 1000); //1000 it means 1 sec
+        
+  </script>
+      <main>
+    <!--    <section id="home">
+          <h1>WELCOME<br>SOUTHEAST ASIA BUSINESS EXCELLENCE AWARDS </h1>
+          <br><br>  -->  
+        <!--<p>LLorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore.
+  
+          </p> -->  
+        </section> 
+      </main>
+
+    <footer>
+      <p>&copy; 2023 Southeast Asia Business Excellence Awards and Outstanding Executive Awards. All rights reserved.</p>
+    </footer>
+    
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+      } 
+    </script>
+  </body>
+</html>

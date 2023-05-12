@@ -1,0 +1,98 @@
+.home{
+  color: gold;
+  
+}
+.heading{
+color: #fff;
+font-size: 40px;
+font-weight: lighter;
+text-align: center;
+letter-spacing: 6px;
+word-spacing: 6px;
+margin-bottom: 25px;
+}
+.description{
+color: #bababa;
+text-align: center;
+font-size: 15px;
+letter-spacing: 1px;
+font-family: Lucida Sans;
+}
+.timer{
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-top: px;
+justify-content: center;
+}
+.sub_timer{
+width: 200px;
+background: rgba(255, 255, 255, 0.19);
+backdrop-filter: blur(20px);
+border-radius: 20px;
+overflow: hidden;
+}
+.digit{
+color: #fff;
+font-weight: lighter;
+font-size: 70px;
+text-align: center;
+padding: 2.5rem 0;
+}
+.digit_name{
+color: #000;
+background: #fff;
+text-align: center;
+padding: 0.6rem 0;
+font-size: 20px;
+}
+@keyframes slide {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-100%);
+}
+}
+
+.logos {
+overflow: hidden;
+padding: 10px 0;
+background: white;
+white-space: nowrap;
+position: relative;
+}
+
+.logos:before,
+.logos:after {
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+
+.logos:before {
+left: 0;
+background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+right: 0;
+background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+animation-play-state: paused;
+}
+
+.logos-slide {
+display: inline-block;
+animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+height: 50px;
+margin: 0 40px;
+}
